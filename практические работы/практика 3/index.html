@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Практика 3</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/vue@3"></script>
+</head>
+<body>
+  <div id="app">
+    <button @click="toggleTheme">
+      {{ isDark ? 'Дневной режим' : 'Ночной режим' }}
+    </button>
+
+    <div class="form-block">
+      <form @submit.prevent="submitForm">
+        <div>
+          <label>Фамилия:<br>
+            <input type="text" v-model="surname" required>
+          </label>
+        </div>
+        <div>
+          <label>Имя:<br>
+            <input type="text" v-model="name" required>
+          </label>
+        </div>
+        <div>
+          <label>Электронная почта:<br>
+            <input type="email" v-model="email" required>
+          </label>
+        </div>
+        <div>
+          <label>Телефон:<br>
+            <input type="tel" v-model="phone" required>
+          </label>
+        </div>
+        <button type="submit">Отправить</button>
+      </form>
+    </div>
+
+	<div v-if="showResult" class="result-block">
+	  <h3>Введённые данные:</h3>
+	  <p><strong>Фамилия:</strong> {{ submitted.surname }}</p>
+	  <p><strong>Имя:</strong> {{ submitted.name }}</p>
+	  <p><strong>Электронная почта:</strong> {{ submitted.email }}</p>
+	  <p><strong>Телефон:</strong> {{ submitted.phone }}</p>
+	</div>
+  </div>
+  <script src="app.js"></script>
+  
+</body>
+</html>

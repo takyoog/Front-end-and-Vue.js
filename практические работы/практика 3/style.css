@@ -1,0 +1,56 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 40px;
+  background: #fff;
+  color: #222;
+  transition: background 0.3s, color 0.3s;
+}
+.dark {
+  background: #1a1a1a;
+  color: #eee;
+}
+.form-block {
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  background: #f5f5f5;
+}
+.dark .form-block {
+  background: #292929;
+}
+input[type="text"], input[type="email"], input[type="tel"] {
+  padding: 8px;
+  margin-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+.dark input[type="text"], .dark input[type="email"], .dark input[type="tel"] {
+  background: #222;
+  color: #eee;
+  border: 1px solid #444;
+}
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background: #1976d2;
+  color: #fff;
+  cursor: pointer;
+  margin-right: 10px;
+}
+.dark button {
+  background: #5c7cfa;
+}
+.result-block {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  background: #e7f3ff;
+  color: #1a1a1a;
+}
+.dark .result-block {
+  background: #333e4a;
+  color: #eee;
+}
