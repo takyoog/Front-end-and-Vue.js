@@ -84,7 +84,7 @@ product[propCategory] = "Electronics";
 
 console.log(product);
 
-// Доступ к "in stock" через точку (вызовет ошибку):
+// Доступ к "in stock" через точку (вызовет ошибку, потому что засчитается только in, а stock после пробела будет считаться отдельной командой):
 // console.log(product.in stock); 
 
 // Доступ к "in stock" квадратные скобки (сработает):
